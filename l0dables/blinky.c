@@ -28,24 +28,19 @@ void ram(void){
 		    return;
 		case BTN_LEFT:
 		    TOGGLE(LED3);   // the LED to the left
-            delay(10000000);
+            delay(100000);
 		    break;
 		case BTN_RIGHT:
-<<<<<<< HEAD
 		    TOGGLE(LED2);   // the LED on the lower right
-		    delay(10000000);
-=======
-		    TOGGLE(LED3);
-		    delayNop(10000000);
->>>>>>> c3d4f2ef7a61ff9142d8a438f24f243c48192dbb
+		    delay(100000);
 		    break;
 		case BTN_UP:
 		    TOGGLE(LED4);   // the red LED on the top
-		    delay(1000000);
+		    delay(100000);
 		    break;
 		case BTN_DOWN:
 		    TOGGLE(LED1);   // the charging-LED
-		    delay(10000000);
+		    delay(100000);
 		    break;
 	    };
 	}
