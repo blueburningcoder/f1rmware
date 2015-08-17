@@ -31,8 +31,13 @@ void ram(void){
             delay(10000000);
 		    break;
 		case BTN_RIGHT:
+<<<<<<< HEAD
 		    TOGGLE(LED2);   // the LED on the lower right
 		    delay(10000000);
+=======
+		    TOGGLE(LED3);
+		    delayNop(10000000);
+>>>>>>> c3d4f2ef7a61ff9142d8a438f24f243c48192dbb
 		    break;
 		case BTN_UP:
 		    TOGGLE(LED4);   // the red LED on the top
