@@ -79,6 +79,8 @@ make
 
 On BSD systems, use `gmake` instead of `make`.
 
+## continue with instructions on wiki
+Now that your toolchain is set up under Linux, follow the [instructions on the wiki](https://rad1o.badge.events.ccc.de/howto:build) to build regularly from git and flash your rad1o.
 
 ## Flash rad1o
 
@@ -86,6 +88,10 @@ Prerequisite: rad1o is connected to USB
 
 To flash the firmware permanently, simply copy the `smartflash/IMG/*.b1n` files to the mounted mass storage of rad1o.
 If you want to just run the firmware once without permanently storing it on the rad1o, you will need the `dfu-util` mentioned above and run the `make flash` command.
+
+Alternatively, you can use `FlashGUI` in the `smartflash` directory, see `smartflash/README.md` for details.
+
+To fix issues on some boards that are not flashable by FlashGUI or to restore the filesystem on the radio in general, run `sudo mkfs.msdos -I /dev/sdx` and restore the firmware again with `FlashGUI`. 
 
 
 ## OS X setup:
